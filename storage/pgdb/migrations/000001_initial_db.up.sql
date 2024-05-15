@@ -37,7 +37,6 @@ create type report_type as enum (
 -- when the application starts up to eliminate DB calls.
 create table public.reports
 (
-    id                    uuid                     not null,
     rpt_type              report_type              not null,
     reported_time         timestamp with time zone not null,
     created_at            timestamp with time zone,
