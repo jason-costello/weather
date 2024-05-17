@@ -1,4 +1,4 @@
-module collector_service
+module collectorsvc
 
 go 1.22.2
 
