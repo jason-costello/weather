@@ -1,4 +1,4 @@
-package collector
+package collectorsvc
 
 import (
 	"context"
@@ -61,7 +61,7 @@ func TestCollector_Collect(t *testing.T) {
 
 			tt.fields.collectionURLs = append(tt.fields.collectionURLs, svr.URL)
 			c := NewCollector(addr, tt.fields.topic, tt.fields.balancer, tt.fields.collectionURLs)
-			if err := c.Collect(tt.args.ctx); (err != nil) != tt.wantErr {
+			if err := c.CollectAndPublish(tt.args.ctx); (err != nil) != tt.wantErr {
 				t.Errorf("Collect() error = %v, wantErr %v", err, tt.wantErr)
 			}
 

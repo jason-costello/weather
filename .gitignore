@@ -4,5 +4,5 @@
 data
 planning_documents
 vendor
-collector-service/collector
+collectorsvc/collector
 .DS_Store
