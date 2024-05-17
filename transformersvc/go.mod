@@ -1,4 +1,4 @@
-module transformer-service
+module github.com/jason-costello/weather/collectorsvc
 
 go 1.22.2
 
@@ -26,6 +26,7 @@ require (
 	github.com/klauspost/compress v1.17.8 // indirect
 	github.com/pierrec/lz4/v4 v4.1.21 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
-	golang.org/x/crypto v0.22.0 // indirect
-	golang.org/x/net v0.24.0 // indirect
+	golang.org/x/crypto v0.23.0 // indirect
+	golang.org/x/net v0.25.0 // indirect
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 )

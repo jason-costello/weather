@@ -8,10 +8,7 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	_ "github.com/IBM/sarama"
-
-	collectorsvc "collector"
-	"collector/tracing"
+	"github.com/jason-costello/weather/collectorsvc"
 )
 
 func main() {
@@ -22,7 +19,6 @@ func main() {
 
 	brokers := strings.Split(*brokersCSV, ",")
 
-	tracing.InitTracer("collectorsvc")
 	var intervalDuration time.Duration
 	var err error
 	intervalDuration, err = time.ParseDuration(*interval + "s")

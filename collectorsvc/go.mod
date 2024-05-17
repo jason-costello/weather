@@ -1,4 +1,4 @@
-module collectorsvc
+module github.com/jason-costello/weather/collectorsvc
 
 go 1.22.2
 

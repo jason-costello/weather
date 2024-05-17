@@ -6,3 +6,4 @@ planning_documents
 vendor
 collectorsvc/collector
 .DS_Store
+go.work
