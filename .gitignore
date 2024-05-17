@@ -1,0 +1,8 @@
+/.idea/
+/notes.txt
+/weather.iml
+data
+planning_documents
+vendor
+collector-service/collector
+.DS_Store
